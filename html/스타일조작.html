@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #text {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <p id="text">글자를 입력 합니다.</p>
+  <script>
+    const pEl = document.querySelector("#text");
+    pEl.style.backgroundColor = "#f00"; // 같은값은 하나로 줄여도 됨
+    pEl.style.fontSize = "20px";
+    pEl.style.color = "#fff"
+  </script>
+</body>
+</html>

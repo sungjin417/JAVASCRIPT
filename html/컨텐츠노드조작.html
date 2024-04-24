@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>컨텐츠 노드 조작</title>
+</head>
+<body>
+  <p id="title">Hello, <span style= "display: none">JavaScript!!</span>example</p>
+  <script>
+    const el = document.getElementById("title").textContent; // .textContent는 태그 전체가 아니라 안에 컨텐츠만 가져 옴
+    const el1 = document.getElementById("title").innerHTML; // .innerHtml : 컨텐츠 뿐만 아니라 안에 html까지 출력함
+    const el2 = document.getElementById("title").innerText;
+    console.log(el);
+    console.log(el1);
+    console.log(el2);
+  </script>
+</body>
+</html>
