@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 500px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div>
+      <img src="../imeges/잇지.jpeg" alt="">
+    </div>
+
+
+    <div id="des">
+      <button class="btn" id="view" onclick="btn1()">상세 설명 보기</button>
+      <div id=desc hidden>
+        <p>팀명 'ITZY"</p>
+      </div>
+      <button class="btn" id="folding" onclick="btn2()" hidden>상세 설명 닫기</button>
+    </div>
+  </div>
+
+  <script>
+    let de = document.querySelector("#desc")
+    let a = document.querySelector("#view")
+    let b = document.querySelector("#folding")
+    function btn1() {
+      a.style.display = "none";
+      b.style.display = "block";
+      de.style.display = "block";
+    } function btn2() {
+      a.style.display = "block";
+      b.style.display = "none";
+      de.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 노드는 돔의 요소, 노드는 엘리먼트보다 큰 범위 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/dom.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>DOM 추가/삭제</h1>
+    <p>공부할 과목을 기록해 보세요</p>
+    <p>공부가 끝난 과목은 클릭해서 삭제할 수 있습니다.</p>
+    <form action="#">
+      <!-- autofocus : 페이지의 커서의 위치를 지정 -->
+      <input type="text" id="subject" autofocus>
+      <!-- return false :  폼의 데이터가 제출 되면 새로고침 되는것을 방지 -->
+      <button onclick="newRegister(); return false;">추가</button> 
+    </form>
+    <hr>
+    <ul id="itemList"></ul>
+
+  </div>
+  <script src="../js/dom.js">
+   
+  </script>
+</body>
+
+</html>

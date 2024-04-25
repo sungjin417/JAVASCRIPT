@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="btnc">
+      <button class btn id="green" onclick="green()">Green</button>
+      <button class btn id="orange" onclick="orange()">Orange</button>
+      <button class btn id="purple" onclick="purple()">Purple</button>
+    </div>
+    <div id="bg" style="width: 300px; height: 200px; border: 1px solid;">
+    </div>
+  </div>
+  <script>
+    let btn_c = document.querySelector("#bg")
+    function green() {
+      btn_c.style.background = "green"
+    } function orange() {
+      btn_c.style.background = "orange"
+    } function purple() {
+      btn_c.style.background = "purple"
+    }
+  </script>
+</body>
+
+</html>
